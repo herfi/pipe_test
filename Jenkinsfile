@@ -15,10 +15,23 @@
  * Set pipelineVersion to a fixed released version (e.g. "v15") when running in a productive environment.
  * To find out about available versions and release notes, visit: https://github.com/SAP/cloud-s4-sdk-pipeline/releases
  */
-String pipelineVersion = "master"
+/*String pipelineVersion = "master"
 
 node {
     deleteDir()
     sh "git clone --depth 1 https://github.com/SAP/cloud-s4-sdk-pipeline.git -b ${pipelineVersion} pipelines"
     load './pipelines/s4sdk-pipeline.groovy'
+}*/
+
+@Library('piper-lib-os') _
+node() {
+
+    stage('prepare') {
+        checkout scm
+        setupCommonPipelineEnvironment script:this
+    }
+    
+    stage('build') {
+    mtaBuild script: this
+}
 }
