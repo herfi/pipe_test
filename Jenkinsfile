@@ -25,7 +25,18 @@ node {
 
 @Library('piper-lib-os') _
 node() {
-
+environment {
+        // Using returnStdout
+        CC = """${sh(
+                returnStdout: true,
+                script: 'echo "boom"'
+            )}""" 
+        // Using returnStatus
+        EXIT_STATUS = """${sh(
+                returnStatus: true,
+                script: 'exit 1'
+            )}"""
+    }
     stage('prepare') {
         checkout scm
         setupCommonPipelineEnvironment script:this
