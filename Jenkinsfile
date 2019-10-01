@@ -43,6 +43,8 @@ environment {
     }
     
     stage('build') {
+    sh 'make' 
+    archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
     mtaBuild script: this
 }
 }
