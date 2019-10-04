@@ -22,7 +22,7 @@ node {
     sh "git clone --depth 1 https://github.com/SAP/cloud-s4-sdk-pipeline.git -b ${pipelineVersion} pipelines"
     load './pipelines/s4sdk-pipeline.groovy'
 }*/
-/*@Library('cloud-mta-build-tool') _*/
+@Library('cloud-mta-build-tool') _
 @Library('piper-lib-os') _
 node() {
 
