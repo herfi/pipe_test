@@ -59,9 +59,9 @@ stages:
 
 cloudFoundryDeploy:
     script: script
-    deployTool: 'mtaDeployPlugin'
-    deployType: 'standard'
+    deployTool: mtaDeployPlugin
+    deployType: standard
     cloudFoundry:
-      org: 'P2001760543trial_trial'
-      space: 'dev'
-      credentialsId: '791eae69-f47d-42d7-a1b7-67e1ee953932'
+      org: P2001760543trial_trial
+      space: dev
+      credentialsId: 791eae69-f47d-42d7-a1b7-67e1ee953932
