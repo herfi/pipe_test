@@ -47,9 +47,9 @@ stages:
 
 #  productionDeployment:
 #    cfTargets:
-#      - org: 'S0019380251trial_trial'
+#      - org: 'P2001760543trial_trial'
 #        space: 'dev'
 #        apiEndpoint: 'https://api.cf.eu10.hana.ondemand.com'
-#        appName: 'myAppName'
+#        appName: 'pipe_test'
 #        manifest: 'manifest.yml'
-#        credentialsId: 'bfe273b3-b79a-4916-8d35-623e74181ef6'
+#        credentialsId: '791eae69-f47d-42d7-a1b7-67e1ee953932'
