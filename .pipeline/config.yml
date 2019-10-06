@@ -25,7 +25,8 @@ general:
 
 ### Step-specific configuration
 steps:
-
+	mtaBuild:
+    	buildTarget: 'CF'
 
 ### Stage-specific configuration
 stages:
