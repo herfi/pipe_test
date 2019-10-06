@@ -47,7 +47,7 @@ stages:
 #      - 'myCustomDestination'
 
   productionDeployment:
-	deployTool: 'mtaDeployPlugin'
+    deployTool: 'mtaDeployPlugin'
     deployType: 'standard'
     cfTargets:
         org: 'P2001760543trial_trial'
