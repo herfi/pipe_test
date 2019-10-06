@@ -31,9 +31,9 @@ node() {
     }
     
     stage('build') {
-    mtaBuild script: this
-}
-stage('deploy') {
-    productionDeployment script: this
-}
+    	mtaBuild script: this
+	}
+	stage('deploy') {
+    	productionDeployment script: this
+	}
 }
