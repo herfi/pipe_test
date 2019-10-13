@@ -34,6 +34,6 @@ node() {
     	mtaBuild script: this
 	}
 	stage('deploy') {
-    	cloudFoundryDeploy script: this, deployTool:'mtaDeployPlugin', dockerImage: 'ppiper/cf-cli:lts'
+    	cloudFoundryDeploy script: this, deployTool:'mtaDeployPlugin', dockerImage: 'ppiper/cf-cli'
 	}
 }
