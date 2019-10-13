@@ -5,6 +5,9 @@ steps:
 
   cloudFoundryDeploy:
     deployTool: 'mtaDeployPlugin'
+    mtaDeployPlugin:
+      dockerImage: 'ppiper/cf-cli'
+      
     deployType: 'standard'
     cloudFoundry:
       org: 'P2001760543trial_trial'
